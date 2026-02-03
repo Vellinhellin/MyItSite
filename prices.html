@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цены - AutoProFix</title>
+    <meta name="description" content="Прайс-лист на услуги автосервиса. Прозрачные цены, никаких скрытых платежей">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/prices.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-tools"></i>
+                <div class="logo-text">
+                    <h1>Auto<span>Pro</span>Fix</h1>
+                    <p class="logo-subtitle">Профессиональный автосервис</p>
+                </div>
+            </div>
+            
+            <nav class="nav">
+                <button class="menu-toggle" aria-label="Открыть меню">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="services.html"><i class="fas fa-wrench"></i> Услуги</a></li>
+                    <li><a href="prices.html" class="active"><i class="fas fa-tags"></i> Цены</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-images"></i> Галерея</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> О нас</a></li>
+                    <li><a href="blog.html"><i class="fas fa-newspaper"></i> Блог</a></li>
+                    <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Контакты</a></li>
+                </ul>
+                
+                <div class="header-cta">
+                    <a href="contact.html#booking" class="phone-btn">
+                        <i class="fas fa-calculator"></i>
+                        <span>Рассчитать</span>
+                    </a>
+                    <button class="theme-toggle" id="theme-switcher" aria-label="Переключить тему">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Наши <span>цены</span></h1>
+            <p>Прозрачный прайс-лист без скрытых платежей. Все цены указаны с учетом работ</p>
+            <div class="breadcrumbs">
+                <a href="index.html">Главная</a> / <span>Цены</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Calculator -->
+    <section class="price-calculator">
+        <div class="container">
+            <h2 class="section-title">Калькулятор <span>стоимости</span></h2>
+            <p class="section-subtitle">Рассчитайте примерную стоимость ремонта</p>
+            
+            <div class="calculator">
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="car-brand">Марка автомобиля</label>
+                        <select id="car-brand">
+                            <option value="">Выберите марку</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="volkswagen">Volkswagen</option>
+                            <option value="bmw">BMW</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                            <option value="honda">Honda</option>
+                            <option value="nissan">Nissan</option>
+                            <option value="ford">Ford</option>
+                            <option value="hyundai">Hyundai</option>
+                            <option value="kia">Kia</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="car-year">Год выпуска</label>
+                        <select id="car-year">
+                            <option value="">Выберите год</option>
+                            <option value="2020-2024">2020-2024</option>
+                            <option value="2015-2019">2015-2019</option>
+                            <option value="2010-2014">2010-2014</option>
+                            <option value="2005-2009">2005-2009</option>
+                            <option value="до 2005">до 2005</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service-type">Тип услуги</label>
+                        <select id="service-type">
+                            <option value="">Выберите услугу</option>
+                            <option value="diagnostics">Диагностика</option>
+                            <option value="maintenance">Техобслуживание</option>
+                            <option value="engine">Ремонт двигателя</option>
+                            <option value="suspension">Ремонт подвески</option>
+                            <option value="brakes">Тормозная система</option>
+                            <option value="electrics">Электрика</option>
+                            <option value="tires">Шиномонтаж</option>
+                        </select>
+                    </div>
+                    
+                    <button id="calculate-btn" class="btn btn-primary">
+                        <i class="fas fa-calculator"></i>
+                        Рассчитать стоимость
+                    </button>
+                </div>
+                
+                <div class="calculator-result">
+                    <div class="result-card">
+                        <h3>Примерная стоимость</h3>
+                        <div class="result-details">
+                            <div class="result-item">
+                                <span>Работы:</span>
+                                <strong id="work-price">0 ₽</strong>
+                            </div>
+                            <div class="result-item">
+                                <span>Запчасти:</span>
+                                <strong id="parts-price">0 ₽</strong>
+                            </div>
+                            <div class="result-item total">
+                                <span>Итого:</span>
+                                <strong id="total-price">0 ₽</strong>
+                            </div>
+                        </div>
+                        <p class="result-note">* Точную стоимость назовет мастер после диагностики</p>
+                        <a href="contact.html#booking" class="btn btn-secondary">
+                            <i class="fas fa-calendar-check"></i>
+                            Записаться на диагностику
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Tables -->
+    <section class="price-tables">
+        <div class="container">
+            <h2 class="section-title">Прайс-лист на <span>услуги</span></h2>
+            
+            <div class="price-filters">
+                <button class="filter-btn active" data-filter="all">Все услуги</button>
+                <button class="filter-btn" data-filter="popular">Популярные</button>
+                <button class="filter-btn" data-filter="economy">Эконом</button>
+            </div>
+            
+            <div class="tables-container">
+                <!-- Диагностика -->
+                <div class="price-table">
+                    <h3 class="table-title">
+                        <i class="fas fa-car-battery"></i>
+                        Диагностика
+                    </h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Время</th>
+                                <th>Цена</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Компьютерная диагностика</td>
+                                <td>30-60 мин</td>
+                                <td>1 500 ₽</td>
+                                <td><button class="btn-table" data-service="Компьютерная диагностика">Записаться</button></td>
+                            </tr>
+                            <tr>
+                                <td>Диагностика подвески</td>
+                                <td>45-90 мин</td>
+                                <td>2 000 ₽</td>
+                                <td><button class="btn-table" data-service="Диагностика подвески">Записаться</button></td>
+                            </tr>
+                            <tr>
+                                <td>Диагностика двигателя</td>
+                                <td>60-120 мин</td>
+                                <td>2 500 ₽</td>
+                                <td><button class="btn-table" data-service="Диагностика двигателя">Записаться</button></td>
+                            </tr>
+                            <tr>
+                                <td>Проверка электроники</td>
+                                <td>30-60 мин</td>
+                                <td>1 800 ₽</td>
+                                <td><button class="btn-table" data-service="Проверка электроники">Записаться</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Техобслуживание -->
+                <div class="price-table">
+                    <h3 class="table-title">
+                        <i class="fas fa-oil-can"></i>
+                        Техобслуживание
+                    </h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Время</th>
+                                <th>Цена</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Замена масла (двигатель)</td>
+                                <td>30-45 мин</td>
+                                <td>от 1 200 ₽</td>
+                                <td><button class="btn-table" data-service="Замена масла">Записаться</button></td>
+                            </tr>
+                            <tr>
+                                <td>Замена масла (АКПП)</td>
+                                <td>60-90 мин</td>
+                                <td>от 3 500 ₽</td>
+                                <td><button class="btn-table" data-service="Замена масла АКПП">Записаться</button></td>
+                            </tr>
+                            <tr>
+                                <td>Замена фильтров (комплекс)</td>
+                                <td>45-60 мин</td>
+                                <td>от 2 000 ₽</td>
+                                <td><button class="btn-table" data-service="Замена фильтров">Записаться</button></td>
+                            </tr>
+                            <tr>
+                                <td>Замена свечей зажигания</td>
+                                <td>30-45 мин</td>
+                                <td>от 1 500 ₽</td>
+                                <td><button class="btn-table" data-service="Замена свечей">Записаться</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Шиномонтаж -->
+                <div class="price-table">
+                    <h3 class="table-title">
+                        <i class="fas fa-tire"></i>
+                        Шиномонтаж
+                    </h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Время</th>
+                                <th>Цена</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Замена шин (R13-R15)</td>
+                                <td>40-60 мин</td>
+                                <td>500 ₽/колесо</td>
+                                <td><button class="btn-table" data-service="Замена шин">Записаться</button></td>
+                            </tr>
+                            <tr>
+                                <td>Замена шин (R16-R18)</td>
+                                <td>40-60 мин</td>
+                                <td>600 ₽/колесо</td>
+                                <td><button class="btn-table" data-service="Замена шин">Записаться</button></td>
+                            </tr>
+                            <tr>
+                                <td>Ремонт прокола</td>
+                                <td>20-30 мин</td>
+                                <td>300-500 ₽</td>
+                                <td><button class="btn-table" data-service="Ремонт прокола">Записаться</button></td>
+                            </tr>
+                            <tr>
+                                <td>Балансировка колеса</td>
+                                <td>10-15 мин</td>
+                                <td>200 ₽/колесо</td>
+                                <td><button class="btn-table" data-service="Балансировка">Записаться</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="special-offers">
+        <div class="container">
+            <h2 class="section-title">Специальные <span>предложения</span></h2>
+            
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-badge">-20%</div>
+                    <h3>Комплексное ТО</h3>
+                    <p>Полное техническое обслуживание со скидкой 20%</p>
+                    <div class="offer-price">
+                        <span class="old-price">10 000 ₽</span>
+                        <span class="new-price">8 000 ₽</span>
+                    </div>
+                    <button class="btn btn-primary offer-btn" data-offer="Комплексное ТО -20%">Воспользоваться</button>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-badge">Бесплатно</div>
+                    <h3>Диагностика при ТО</h3>
+                    <p>Бесплатная компьютерная диагностика при заказе ТО</p>
+                    <div class="offer-price">
+                        <span class="old-price">1 500 ₽</span>
+                        <span class="new-price">0 ₽</span>
+                    </div>
+                    <button class="btn btn-primary offer-btn" data-offer="Диагностика бесплатно">Воспользоваться</button>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-badge">-15%</div>
+                    <h3>Шиномонтаж в подарок</h3>
+                    <p>Скидка 15% на сезонную замену + бесплатное хранение</p>
+                    <div class="offer-price">
+                        <span class="old-price">4 000 ₽</span>
+                        <span class="new-price">3 400 ₽</span>
+                    </div>
+                    <button class="btn btn-primary offer-btn" data-offer="Шиномонтаж -15%">Воспользоваться</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Guarantee -->
+    <section class="price-guarantee">
+        <div class="container">
+            <div class="guarantee-content">
+                <div class="guarantee-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="guarantee-text">
+                    <h2>Гарантия лучшей цены</h2>
+                    <p>Нашли услугу дешевле? Сообщите нам, и мы сделаем цену еще ниже!</p>
+                    <div class="guarantee-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Фиксированная цена в смете</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Никаких скрытых платежей</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Согласование всех работ заранее</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Тот же футер -->
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/prices.js"></script>
+</body>
+</html>

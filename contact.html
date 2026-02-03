@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - AutoProFix</title>
+    <meta name="description" content="Контакты автосервиса AutoProFix. Запись на ремонт, схема проезда, онлайн-консультация">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-tools"></i>
+                <div class="logo-text">
+                    <h1>Auto<span>Pro</span>Fix</h1>
+                    <p class="logo-subtitle">Профессиональный автосервис</p>
+                </div>
+            </div>
+            
+            <nav class="nav">
+                <button class="menu-toggle" aria-label="Открыть меню">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="services.html"><i class="fas fa-wrench"></i> Услуги</a></li>
+                    <li><a href="prices.html"><i class="fas fa-tags"></i> Цены</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-images"></i> Галерея</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> О нас</a></li>
+                    <li><a href="blog.html"><i class="fas fa-newspaper"></i> Блог</a></li>
+                    <li><a href="contact.html" class="active"><i class="fas fa-phone-alt"></i> Контакты</a></li>
+                </ul>
+                
+                <div class="header-cta">
+                    <a href="tel:+74951234567" class="phone-btn">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (495) 123-45-67</span>
+                    </a>
+                    <button class="theme-toggle" id="theme-switcher" aria-label="Переключить тему">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Наши <span>контакты</span></h1>
+            <p>Свяжитесь с нами любым удобным способом. Мы всегда на связи!</p>
+            <div class="breadcrumbs">
+                <a href="index.html">Главная</a> / <span>Контакты</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Main Section -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Адрес</h3>
+                            <p>г. Москва, ул. Автомобильная, д. 15</p>
+                            <p class="info-note">Вход со стороны парковки</p>
+                            <a href="#map" class="info-link">
+                                <i class="fas fa-directions"></i>
+                                Построить маршрут
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Часы работы</h3>
+                            <div class="schedule">
+                                <div class="schedule-item">
+                                    <span>Понедельник - Пятница</span>
+                                    <span>8:00 - 22:00</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <span>Суббота</span>
+                                    <span>9:00 - 20:00</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <span>Воскресенье</span>
+                                    <span>9:00 - 18:00</span>
+                                </div>
+                                <div class="schedule-item highlight">
+                                    <span>Экстренная помощь</span>
+                                    <span>24/7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Телефоны</h3>
+                            <div class="phones">
+                                <div class="phone-item">
+                                    <span>Основной</span>
+                                    <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+                                </div>
+                                <div class="phone-item">
+                                    <span>Мобильный</span>
+                                    <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+                                </div>
+                                <div class="phone-item">
+                                    <span>Эвакуатор</span>
+                                    <a href="tel:+74957654321">+7 (495) 765-43-21</a>
+                                </div>
+                                <div class="phone-item">
+                                    <span>WhatsApp / Telegram</span>
+                                    <a href="https://wa.me/79991234567">+7 (999) 123-45-67</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Электронная почта</h3>
+                            <div class="emails">
+                                <div class="email-item">
+                                    <span>Общие вопросы</span>
+                                    <a href="mailto:info@autoprofix.ru">info@autoprofix.ru</a>
+                                </div>
+                                <div class="email-item">
+                                    <span>Запчасти</span>
+                                    <a href="mailto:parts@autoprofix.ru">parts@autoprofix.ru</a>
+                                </div>
+                                <div class="email-item">
+                                    <span>Сотрудничество</span>
+                                    <a href="mailto:partner@autoprofix.ru">partner@autoprofix.ru</a>
+                                </div>
+                                <div class="email-item">
+                                    <span>Рекламация</span>
+                                    <a href="mailto:complaint@autoprofix.ru">complaint@autoprofix.ru</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-section" id="booking">
+                    <h2 class="section-title">Онлайн <span>запись</span></h2>
+                    <p class="section-subtitle">Запишитесь на обслуживание или получите консультацию</p>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-tabs">
+                            <button type="button" class="tab-btn active" data-tab="booking">Запись на ремонт</button>
+                            <button type="button" class="tab-btn" data-tab="consultation">Консультация</button>
+                            <button type="button" class="tab-btn" data-tab="callback">Обратный звонок</button>
+                        </div>
+                        
+                        <div class="tab-content active" id="booking-tab">
+                            <div class="form-group">
+                                <label for="name">Ваше имя *</label>
+                                <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Телефон *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+7 (999) 123-45-67">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="car-brand">Марка автомобиля *</label>
+                                <select id="car-brand" name="car-brand" required>
+                                    <option value="">Выберите марку</option>
+                                    <option value="toyota">Toyota</option>
+                                    <option value="volkswagen">Volkswagen</option>
+                                    <option value="bmw">BMW</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                    <option value="honda">Honda</option>
+                                    <option value="nissan">Nissan</option>
+                                    <option value="ford">Ford</option>
+                                    <option value="hyundai">Hyundai</option>
+                                    <option value="kia">Kia</option>
+                                    <option value="other">Другая</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="car-model">Модель и год</label>
+                                <input type="text" id="car-model" name="car-model" placeholder="Camry 2018">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service-type">Тип услуги *</label>
+                                <select id="service-type" name="service-type" required>
+                                    <option value="">Выберите услугу</option>
+                                    <option value="diagnostics">Диагностика</option>
+                                    <option value="maintenance">Техобслуживание</option>
+                                    <option value="engine">Ремонт двигателя</option>
+                                    <option value="suspension">Ремонт подвески</option>
+                                    <option value="brakes">Тормозная система</option>
+                                    <option value="electrics">Электрика</option>
+                                    <option value="tires">Шиномонтаж</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date">Предпочтительная дата *</label>
+                                    <input type="date" id="date" name="date" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="time">Время *</label>
+                                    <select id="time" name="time" required>
+                                        <option value="">Выберите время</option>
+                                        <option value="08:00">08:00</option>
+                                        <option value="09:00">09:00</option>
+                                        <option value="10:00">10:00</option>
+                                        <option value="11:00">11:00</option>
+                                        <option value="12:00">12:00</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="14:00">14:00</option>
+                                        <option value="15:00">15:00</option>
+                                        <option value="16:00">16:00</option>
+                                        <option value="17:00">17:00</option>
+                                        <option value="18:00">18:00</option>
+                                        <option value="19:00">19:00</option>
+                                        <option value="20:00">20:00</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="problem">Описание проблемы</label>
+                                <textarea id="problem" name="problem" rows="3" placeholder="Опишите симптомы или проблему с автомобилем..."></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="consultation-tab">
+                            <div class="form-group">
+                                <label for="consult-name">Ваше имя *</label>
+                                <input type="text" id="consult-name" name="consult-name" placeholder="Иван Иванов">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="consult-phone">Телефон *</label>
+                                <input type="tel" id="consult-phone" name="consult-phone" placeholder="+7 (999) 123-45-67">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="consult-email">Email</label>
+                                <input type="email" id="consult-email" name="consult-email" placeholder="ivan@example.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="consult-topic">Тема консультации *</label>
+                                <select id="consult-topic" name="consult-topic">
+                                    <option value="">Выберите тему</option>
+                                    <option value="price">Расчет стоимости</option>
+                                    <option value="diagnostics">Диагностика проблемы</option>
+                                    <option value="parts">Подбор запчастей</option>
+                                    <option value="maintenance">Обслуживание</option>
+                                    <option value="warranty">Гарантия</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="consult-message">Ваш вопрос *</label>
+                                <textarea id="consult-message" name="consult-message" rows="5" placeholder="Опишите подробно ваш вопрос..."></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="consult-file" id="consult-file">
+                                    <span>Прикрепить файл (фото/видео проблемы)</span>
+                                </label>
+                                <input type="file" id="file-upload" class="file-upload" accept="image/*,video/*" style="display: none;">
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="callback-tab">
+                            <div class="form-group">
+                                <label for="callback-name">Ваше имя *</label>
+                                <input type="text" id="callback-name" name="callback-name" placeholder="Иван Иванов">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="callback-phone">Телефон *</label>
+                                <input type="tel" id="callback-phone" name="callback-phone" placeholder="+7 (999) 123-45-67">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="callback-time">Удобное время для звонка *</label>
+                                <select id="callback-time" name="callback-time">
+                                    <option value="">Выберите время</option>
+                                    <option value="morning">Утро (9:00 - 12:00)</option>
+                                    <option value="day">День (12:00 - 17:00)</option>
+                                    <option value="evening">Вечер (17:00 - 21:00)</option>
+                                    <option value="any">Любое время</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="callback-topic">Тема звонка</label>
+                                <input type="text" id="callback-topic" name="callback-topic" placeholder="Кратко опишите тему разговора">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="callback-urgent" id="callback-urgent">
+                                    <span>Срочный звонок (в течение 30 минут)</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary btn-large">
+                                <i class="fas fa-paper-plane"></i>
+                                Отправить заявку
+                            </button>
+                            <p class="form-note">
+                                <i class="fas fa-shield-alt"></i>
+                                Ваши данные защищены и не будут переданы третьим лицам
+                            </p>
+                        </div>
+                    </form>
+                    
+                    <div class="booking-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Среднее время ответа</h4>
+                                <p>15 минут</p>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <div>
+                                <h4>Записей сегодня</h4>
+                                <p id="today-bookings">12</p>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-user-check"></i>
+                            <div>
+                                <h4>Довольных клиентов</h4>
+                                <p>98%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" id="map">
+        <div class="container">
+            <h2 class="section-title">Как <span>добраться</span></h2>
+            <p class="section-subtitle">Мы находимся в удобной транспортной доступности</p>
+            
+            <div class="map-container">
+                <!-- Карта (заглушка) -->
+                <div class="map-placeholder">
+                    <div class="map-overlay">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>г. Москва, ул. Автомобильная, д. 15</h3>
+                        <p>Вход с парковки, 50 метров от въезда</p>
+                    </div>
+                </div>
+                
+                <div class="map-info">
+                    <h3>Транспортная доступность</h3>
+                    
+                    <div class="transport-options">
+                        <div class="transport-item">
+                            <div class="transport-icon metro">
+                                <i class="fas fa-subway"></i>
+                            </div>
+                            <div class="transport-content">
+                                <h4>Метро</h4>
+                                <p>Станция "Автозаводская" (5 минут пешком)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="transport-item">
+                            <div class="transport-icon bus">
+                                <i class="fas fa-bus"></i>
+                            </div>
+                            <div class="transport-content">
+                                <h4>Автобус</h4>
+                                <p>Остановка "Улица Автомобильная"</p>
+                                <p class="transport-details">Маршруты: 99, 156, 245</p>
+                            </div>
+                        </div>
+                        
+                        <div class="transport-item">
+                            <div class="transport-icon car">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <div class="transport-content">
+                                <h4>На автомобиле</h4>
+                                <p>Бесплатная парковка на 50 мест</p>
+                                <p class="transport-details">Въезд с ул. Автомобильная</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="parking-info">
+                        <h4>Парковка</h4>
+                        <div class="parking-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Бесплатная для клиентов</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Крытая охраняемая</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Видеонаблюдение 24/7</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Зарядка для электромобилей</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Частые <span>вопросы</span></h2>
+            <p class="section-subtitle">Ответы на популярные вопросы о записи и обслуживании</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Как быстро можно записаться на ремонт?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Обычно мы можем принять вас в тот же день или на следующий. Для срочного ремонта доступна услуга "Экспресс-ремонт" - приезжайте без записи, мы найдем окно в графике мастеров.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Нужно ли оставлять автомобиль на весь день?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Нет, не обязательно. Многие услуги (диагностика, шиномонтаж, замена масла) занимают 1-2 часа. Мы заранее сообщаем примерное время выполнения работ. Также предоставляем подменный автомобиль при длительном ремонте.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Работаете ли вы по выходным?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы работаем 7 дней в неделю. Суббота: 9:00-20:00, Воскресенье: 9:00-18:00. Экстренная помощь доступна круглосуточно.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Какие марки автомобилей вы обслуживаете?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мы работаем со всеми марками автомобилей: от отечественных до премиум-класса. Имеем специалистов по японским, немецким, корейским и американским авто. Сложные случаи обсуждаем индивидуально.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Можно ли получить смету до начала работ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, после диагностики мы составляем подробную смету со стоимостью работ и запчастей. Все согласовываем с клиентом перед началом ремонта. Цены фиксированы, никаких скрытых платежей.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Есть ли гарантия на работы?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, на все виды работ предоставляем гарантию 2 года. На установленные запчасти - гарантия от производителя. Все гарантийные случаи рассматриваем в приоритетном порядке.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contacts -->
+    <section class="emergency-section">
+        <div class="container">
+            <div class="emergency-content">
+                <div class="emergency-icon">
+                    <i class="fas fa-ambulance"></i>
+                </div>
+                <div class="emergency-text">
+                    <h2>Экстренная помощь на дороге</h2>
+                    <p>Сломались в пути? Мы выедем к вам в течение 30 минут!</p>
+                </div>
+                <div class="emergency-phone">
+                    <a href="tel:+74957654321" class="btn btn-emergency">
+                        <i class="fas fa-phone"></i>
+                        +7 (495) 765-43-21
+                    </a>
+                    <p>Круглосуточно, без выходных</p>
+                </div>
+            </div>
+            
+            <div class="emergency-services">
+                <div class="service">
+                    <i class="fas fa-shuttle-van"></i>
+                    <h4>Эвакуатор</h4>
+                    <p>Бесплатно при заказе ремонта</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-tools"></i>
+                    <h4>Выездной механик</h4>
+                    <p>Ремонт на месте 24/7</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-car-battery"></i>
+                    <h4>Прикурить авто</h4>
+                    <p>Быстрая помощь с аккумулятором</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-gas-pump"></i>
+                    <h4>Доставка топлива</h4>
+                    <p>Если закончился бензин</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media -->
+    <section class="social-section">
+        <div class="container">
+            <h2 class="section-title">Мы в <span>соцсетях</span></h2>
+            <p class="section-subtitle">Подписывайтесь, чтобы быть в курсе акций и полезных советов</p>
+            
+            <div class="social-grid">
+                <a href="#" class="social-card vk">
+                    <div class="social-icon">
+                        <i class="fab fa-vk"></i>
+                    </div>
+                    <div class="social-content">
+                        <h3>ВКонтакте</h3>
+                        <p>Акции, конкурсы, общение</p>
+                        <span class="social-followers">2.5K подписчиков</span>
+                    </div>
+                </a>
+                
+                <a href="#" class="social-card telegram">
+                    <div class="social-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <div class="social-content">
+                        <h3>Telegram</h3>
+                        <p>Новости и полезные советы</p>
+                        <span class="social-followers">1.8K подписчиков</span>
+                    </div>
+                </a>
+                
+                <a href="#" class="social-card youtube">
+                    <div class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="social-content">
+                        <h3>YouTube</h3>
+                        <p>Видео-обзоры и ремонты</p>
+                        <span class="social-followers">5.2K подписчиков</span>
+                    </div>
+                </a>
+                
+                <a href="#" class="social-card instagram">
+                    <div class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="social-content">
+                        <h3>Instagram</h3>
+                        <p>Фото работ и жизнь сервиса</p>
+                        <span class="social-followers">3.1K подписчиков</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="social-cta">
+                <p>Есть вопросы? Напишите нам в мессенджер!</p>
+                <div class="messenger-buttons">
+                    <a href="https://wa.me/79991234567" class="btn whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+                    <a href="https://t.me/autoprofix" class="btn telegram">
+                        <i class="fab fa-telegram"></i>
+                        Telegram
+                    </a>
+                    <a href="viber://chat?number=%2B79991234567" class="btn viber">
+                        <i class="fab fa-viber"></i>
+                        Viber
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-tools"></i>
+                        <h3>Auto<span>Pro</span>Fix</h3>
+                    </div>
+                    <p class="footer-description">Профессиональный автосервис в Москве. Качественный ремонт и обслуживание автомобилей с 2009 года.</p>
+                    <div class="footer-contacts">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>г. Москва, ул. Автомобильная, д. 15</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@autoprofix.ru">info@autoprofix.ru</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Быстрая навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="prices.html">Цены</a></li>
+                        <li><a href="gallery.html">Галерея работ</a></li>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Популярные услуги</h4>
+                    <ul class="footer-services">
+                        <li><a href="services.html#diagnostics">Диагностика автомобиля</a></li>
+                        <li><a href="services.html#maintenance">Техническое обслуживание</a></li>
+                        <li><a href="services.html#engine">Ремонт двигателя</a></li>
+                        <li><a href="services.html#tires">Шиномонтаж</a></li>
+                        <li><a href="services.html#electrics">Ремонт электрики</a></li>
+                        <li><a href="services.html#body">Кузовной ремонт</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Рабочие часы</h4>
+                    <div class="working-hours">
+                        <div class="hours-item">
+                            <span>Пн-Пт</span>
+                            <span>8:00 - 22:00</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Сб</span>
+                            <span>9:00 - 20:00</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Вс</span>
+                            <span>9:00 - 18:00</span>
+                        </div>
+                        <div class="hours-item emergency">
+                            <span>Экстренная помощь</span>
+                            <span>24/7</span>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-newsletter">
+                        <h4>Подписка на новости</h4>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Ваш email" required>
+                            <button type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2009-2024 AutoProFix. Все права защищены.</p>
+                    <p>ОГРН 1234567890123, ИНН 1234567890</p>
+                </div>
+                <div class="footer-links">
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="terms.html">Пользовательское соглашение</a>
+                    <a href="sitemap.html">Карта сайта</a>
+                </div>
+                <div class="footer-stats">
+                    <div class="stat">
+                        <i class="fas fa-user-clock"></i>
+                        <span>Онлайн: <strong id="online-now">24</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content success-modal">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="modal-body">
+                <h3>Заявка успешно отправлена!</h3>
+                <p>Мы свяжемся с вами в течение 15 минут для подтверждения записи.</p>
+                <p class="modal-note">Номер заявки: <strong id="request-number">APF-2024-001</strong></p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary modal-close">Отлично!</button>
+                <a href="index.html" class="btn btn-outline">На главную</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

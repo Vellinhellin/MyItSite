@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог - AutoProFix</title>
+    <meta name="description" content="Полезные статьи об обслуживании и ремонте автомобилей">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-tools"></i>
+                <div class="logo-text">
+                    <h1>Auto<span>Pro</span>Fix</h1>
+                    <p class="logo-subtitle">Профессиональный автосервис</p>
+                </div>
+            </div>
+            
+            <nav class="nav">
+                <button class="menu-toggle" aria-label="Открыть меню">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="services.html"><i class="fas fa-wrench"></i> Услуги</a></li>
+                    <li><a href="prices.html"><i class="fas fa-tags"></i> Цены</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-images"></i> Галерея</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> О нас</a></li>
+                    <li><a href="blog.html" class="active"><i class="fas fa-newspaper"></i> Блог</a></li>
+                    <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Контакты</a></li>
+                </ul>
+                
+                <div class="header-cta">
+                    <div class="search-box">
+                        <input type="text" id="blog-search" placeholder="Поиск статей...">
+                        <button id="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <button class="theme-toggle" id="theme-switcher" aria-label="Переключить тему">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Наш <span>блог</span></h1>
+            <p>Полезные статьи и советы по ремонту и обслуживанию автомобилей</p>
+            <div class="breadcrumbs">
+                <a href="index.html">Главная</a> / <span>Блог</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="blog-main">
+        <div class="container">
+            <div class="blog-layout">
+                <!-- Main Content -->
+                <div class="blog-content">
+                    <!-- Featured Article -->
+                    <div class="featured-article">
+                        <div class="featured-image">
+                            <div class="category-badge">Советы</div>
+                            <img src="https://via.placeholder.com/800x400/1d3557/ffffff?text=Главная+статья" alt="Как выбрать масло">
+                        </div>
+                        <div class="featured-content">
+                            <div class="article-meta">
+                                <span><i class="far fa-calendar"></i> 15 мая 2024</span>
+                                <span><i class="far fa-eye"></i> 1.2K просмотров</span>
+                                <span><i class="far fa-comments"></i> 24 комментария</span>
+                            </div>
+                            <h2><a href="blog-post1.html">Как выбрать моторное масло: полное руководство 2024</a></h2>
+                            <p>Подробный разбор типов моторных масел, вязкости, стандартов и рекомендаций для разных автомобилей. Узнайте, какое масло подойдет именно вашему авто.</p>
+                            <a href="blog-post1.html" class="read-more">Читать полностью <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Articles Grid -->
+                    <div class="articles-grid" id="articles-container">
+                        <!-- Статьи будут загружены через JavaScript -->
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <button class="page-btn next">Далее <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                
+                <!-- Sidebar -->
+                <div class="blog-sidebar">
+                    <!-- Search Widget -->
+                    <div class="sidebar-widget">
+                        <h3>Поиск по блогу</h3>
+                        <div class="search-widget">
+                            <input type="text" placeholder="Введите запрос...">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Categories Widget -->
+                    <div class="sidebar-widget">
+                        <h3>Категории</h3>
+                        <ul class="categories-list">
+                            <li>
+                                <a href="#" data-category="advice">
+                                    <i class="fas fa-lightbulb"></i>
+                                    Советы
+                                    <span class="count">12</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-category="repair">
+                                    <i class="fas fa-tools"></i>
+                                    Ремонт
+                                    <span class="count">8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-category="maintenance">
+                                    <i class="fas fa-oil-can"></i>
+                                    Обслуживание
+                                    <span class="count">15</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-category="diagnostics">
+                                    <i class="fas fa-car-battery"></i>
+                                    Диагностика
+                                    <span class="count">6</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-category="tires">
+                                    <i class="fas fa-tire"></i>
+                                    Шины
+                                    <span class="count">9</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-category="news">
+                                    <i class="fas fa-newspaper"></i>
+                                    Новости
+                                    <span class="count">5</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Popular Articles -->
+                    <div class="sidebar-widget">
+                        <h3>Популярные статьи</h3>
+                        <div class="popular-articles">
+                            <div class="popular-article">
+                                <div class="popular-image">
+                                    <img src="https://via.placeholder.com/80x60/457b9d/ffffff?text=1" alt="">
+                                </div>
+                                <div class="popular-content">
+                                    <h4><a href="#">10 признаков неисправности тормозов</a></h4>
+                                    <div class="popular-meta">
+                                        <span><i class="far fa-eye"></i> 2.4K</span>
+                                        <span><i class="far fa-calendar"></i> 12.04</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="popular-article">
+                                <div class="popular-image">
+                                    <img src="https://via.placeholder.com/80x60/e63946/ffffff?text=2" alt="">
+                                </div>
+                                <div class="popular-content">
+                                    <h4><a href="#">Когда менять ремень ГРМ</a></h4>
+                                    <div class="popular-meta">
+                                        <span><i class="far fa-eye"></i> 1.8K</span>
+                                        <span><i class="far fa-calendar"></i> 05.04</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="popular-article">
+                                <div class="popular-image">
+                                    <img src="https://via.placeholder.com/80x60/2a9d8f/ffffff?text=3" alt="">
+                                </div>
+                                <div class="popular-content">
+                                    <h4><a href="#">Экономия на топливе: 7 способов</a></h4>
+                                    <div class="popular-meta">
+                                        <span><i class="far fa-eye"></i> 3.1K</span>
+                                        <span><i class="far fa-calendar"></i> 28.03</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tags Cloud -->
+                    <div class="sidebar-widget">
+                        <h3>Теги</h3>
+                        <div class="tags-cloud">
+                            <a href="#" class="tag">масло</a>
+                            <a href="#" class="tag">тормоза</a>
+                            <a href="#" class="tag">диагностика</a>
+                            <a href="#" class="tag">ТО</a>
+                            <a href="#" class="tag">шины</a>
+                            <a href="#" class="tag">аккумулятор</a>
+                            <a href="#" class="tag">фильтры</a>
+                            <a href="#" class="tag">двигатель</a>
+                            <a href="#" class="tag">подвеска</a>
+                            <a href="#" class="tag">экономия</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Subscribe Widget -->
+                    <div class="sidebar-widget subscribe-widget">
+                        <h3>Подписка на новости</h3>
+                        <p>Получайте полезные статьи первыми</p>
+                        <form id="subscribe-form">
+                            <input type="email" placeholder="Ваш email" required>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Подписаться
+                            </button>
+                        </form>
+                        <p class="privacy-note">Подписываясь, вы соглашаетесь с политикой конфиденциальности</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Хотите стать автором?</h2>
+                    <p>Поделитесь своим опытом в нашем блоге и получите скидку на услуги</p>
+                </div>
+                <a href="contact.html#author" class="btn btn-light">
+                    <i class="fas fa-edit"></i>
+                    Предложить статью
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comments Section -->
+    <section class="comments-section">
+        <div class="container">
+            <h2 class="section-title">Последние <span>комментарии</span></h2>
+            
+            <div class="comments-container">
+                <div class="comment">
+                    <div class="comment-header">
+                        <div class="comment-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Андрей С.</h4>
+                                <span class="comment-date">2 дня назад</span>
+                            </div>
+                        </div>
+                        <div class="comment-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="comment-text">Отличная статья про выбор масла! Воспользовался советами и купил то, что нужно. Спасибо!</p>
+                    <div class="comment-actions">
+                        <button class="like-btn"><i class="far fa-thumbs-up"></i> 12</button>
+                        <button class="reply-btn">Ответить</button>
+                    </div>
+                </div>
+                
+                <div class="comment">
+                    <div class="comment-header">
+                        <div class="comment-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Марина И.</h4>
+                                <span class="comment-date">5 дней назад</span>
+                            </div>
+                        </div>
+                        <div class="comment-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="comment-text">А можно статью про выбор зимней резины для SUV? Очень актуально перед сезоном.</p>
+                    <div class="comment-actions">
+                        <button class="like-btn"><i class="far fa-thumbs-up"></i> 8</button>
+                        <button class="reply-btn">Ответить</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add Comment Form -->
+            <div class="add-comment">
+                <h3>Добавить комментарий</h3>
+                <form id="comment-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Текст комментария" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Оценка:</label>
+                        <div class="rating-input">
+                            <i class="far fa-star" data-rating="1"></i>
+                            <i class="far fa-star" data-rating="2"></i>
+                            <i class="far fa-star" data-rating="3"></i>
+                            <i class="far fa-star" data-rating="4"></i>
+                            <i class="far fa-star" data-rating="5"></i>
+                        </div>
+                        <input type="hidden" id="comment-rating" value="5">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить комментарий</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Тот же футер -->
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

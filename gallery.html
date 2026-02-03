@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея работ - AutoProFix</title>
+    <meta name="description" content="Фотогалерея выполненных работ нашего автосервиса">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-tools"></i>
+                <div class="logo-text">
+                    <h1>Auto<span>Pro</span>Fix</h1>
+                    <p class="logo-subtitle">Профессиональный автосервис</p>
+                </div>
+            </div>
+            
+            <nav class="nav">
+                <button class="menu-toggle" aria-label="Открыть меню">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="services.html"><i class="fas fa-wrench"></i> Услуги</a></li>
+                    <li><a href="prices.html"><i class="fas fa-tags"></i> Цены</a></li>
+                    <li><a href="gallery.html" class="active"><i class="fas fa-images"></i> Галерея</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> О нас</a></li>
+                    <li><a href="blog.html"><i class="fas fa-newspaper"></i> Блог</a></li>
+                    <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Контакты</a></li>
+                </ul>
+                
+                <div class="header-cta">
+                    <a href="contact.html#booking" class="phone-btn">
+                        <i class="fas fa-images"></i>
+                        <span>Наши работы</span>
+                    </a>
+                    <button class="theme-toggle" id="theme-switcher" aria-label="Переключить тему">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Галерея <span>работ</span></h1>
+            <p>Фотографии выполненных ремонтов и обслуживания автомобилей</p>
+            <div class="breadcrumbs">
+                <a href="index.html">Главная</a> / <span>Галерея</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="gallery-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Все работы</button>
+                <button class="filter-btn" data-filter="engine">Двигатель</button>
+                <button class="filter-btn" data-filter="suspension">Подвеска</button>
+                <button class="filter-btn" data-filter="body">Кузовной ремонт</button>
+                <button class="filter-btn" data-filter="diagnostics">Диагностика</button>
+                <button class="filter-btn" data-filter="tires">Шиномонтаж</button>
+                <button class="filter-btn" data-filter="before-after">До/После</button>
+            </div>
+            
+            <div class="sort-options">
+                <span>Сортировать:</span>
+                <select id="sort-gallery">
+                    <option value="newest">Сначала новые</option>
+                    <option value="oldest">Сначала старые</option>
+                    <option value="popular">По популярности</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-main">
+        <div class="container">
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Карточки галереи будут добавлены через JavaScript -->
+            </div>
+            
+            <div class="gallery-loading">
+                <div class="loading-spinner">
+                    <i class="fas fa-sync fa-spin"></i>
+                </div>
+                <p>Загрузка фотографий...</p>
+            </div>
+            
+            <div class="load-more">
+                <button id="load-more-btn" class="btn btn-outline">
+                    <i class="fas fa-plus"></i>
+                    Показать еще
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="gallery-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-camera"></i>
+                    <h3 id="total-photos">156</h3>
+                    <p>Фотографий в галерее</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-car"></i>
+                    <h3 id="cars-repaired">87</h3>
+                    <p>Отремонтировано автомобилей</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3 id="projects-completed">254</h3>
+                    <p>Выполненных проектов</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-thumbs-up"></i>
+                    <h3 id="gallery-likes">1.2K</h3>
+                    <p>Лайков галереи</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Gallery -->
+    <section class="video-gallery">
+        <div class="container">
+            <h2 class="section-title">Видео <span>работ</span></h2>
+            <p class="section-subtitle">Процесс ремонта в динамике</p>
+            
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <i class="fas fa-play-circle"></i>
+                        <img src="https://via.placeholder.com/320x180/1d3557/ffffff?text=Двигатель" alt="Ремонт двигателя">
+                    </div>
+                    <h3>Капитальный ремонт двигателя</h3>
+                    <p>Полный разбор и сборка двигателя Toyota Camry</p>
+                    <div class="video-meta">
+                        <span><i class="fas fa-clock"></i> 5:24</span>
+                        <span><i class="fas fa-eye"></i> 1.2K просмотров</span>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <i class="fas fa-play-circle"></i>
+                        <img src="https://via.placeholder.com/320x180/457b9d/ffffff?text=Подвеска" alt="Ремонт подвески">
+                    </div>
+                    <h3>Замена амортизаторов</h3>
+                    <p>Процесс замены амортизаторов на Volkswagen Passat</p>
+                    <div class="video-meta">
+                        <span><i class="fas fa-clock"></i> 3:45</span>
+                        <span><i class="fas fa-eye"></i> 890 просмотров</span>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <i class="fas fa-play-circle"></i>
+                        <img src="https://via.placeholder.com/320x180/e63946/ffffff?text=Диагностика" alt="Компьютерная диагностика">
+                    </div>
+                    <h3>Компьютерная диагностика</h3>
+                    <p>Поиск и устранение неисправностей электроники</p>
+                    <div class="video-meta">
+                        <span><i class="fas fa-clock"></i> 4:12</span>
+                        <span><i class="fas fa-eye"></i> 1.5K просмотров</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Upload (для администратора) -->
+    <section class="photo-upload" id="upload-section">
+        <div class="container">
+            <h2 class="section-title">Добавить <span>фото</span></h2>
+            <p class="section-subtitle">Поделитесь фотографиями вашего автомобиля после ремонта</p>
+            
+            <div class="upload-form">
+                <div class="upload-area" id="drop-area">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <h3>Перетащите фото сюда</h3>
+                    <p>или нажмите для выбора файлов</p>
+                    <input type="file" id="file-input" accept="image/*" multiple>
+                    <div class="file-info">
+                        <p>Поддерживаемые форматы: JPG, PNG, GIF</p>
+                        <p>Максимальный размер: 5 MB</p>
+                    </div>
+                </div>
+                
+                <div class="upload-preview" id="upload-preview">
+                    <!-- Предпросмотр загружаемых фото -->
+                </div>
+                
+                <div class="upload-controls">
+                    <button id="upload-btn" class="btn btn-primary" disabled>
+                        <i class="fas fa-upload"></i>
+                        Загрузить фото
+                    </button>
+                    <button id="clear-btn" class="btn btn-outline">
+                        <i class="fas fa-trash"></i>
+                        Очистить
+                    </button>
+                </div>
+                
+                <div class="upload-note">
+                    <p><i class="fas fa-info-circle"></i> Фотографии будут опубликованы после модерации</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close">&times;</button>
+            <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+            <div class="lightbox-image-container">
+                <img id="lightbox-image" src="" alt="">
+            </div>
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+                <div class="lightbox-meta">
+                    <span id="lightbox-date"></span>
+                    <span id="lightbox-category"></span>
+                    <span id="lightbox-likes"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Тот же футер -->
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
