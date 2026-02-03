@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoProFix - Профессиональный автосервис</title>
+    <meta name="description" content="Профессиональный ремонт и обслуживание автомобилей в Москве. Качественно, быстро, с гарантией!">
+    <meta name="keywords" content="автосервис, ремонт автомобилей, ТО, диагностика, шиномонтаж">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-tools"></i>
+                <div class="logo-text">
+                    <h1>Auto<span>Pro</span>Fix</h1>
+                    <p class="logo-subtitle">Профессиональный автосервис</p>
+                </div>
+            </div>
+            
+            <nav class="nav">
+                <button class="menu-toggle" aria-label="Открыть меню">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="services.html"><i class="fas fa-wrench"></i> Услуги</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> О нас</a></li>
+                    <li><a href="blog.html"><i class="fas fa-newspaper"></i> Блог</a></li>
+                    <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Контакты</a></li>
+                </ul>
+                
+                <div class="header-cta">
+                    <a href="tel:+74951234567" class="phone-btn">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (495) 123-45-67</span>
+                    </a>
+                    <button class="theme-toggle" id="theme-switcher" aria-label="Переключить тему">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Гарантия 2 года</span>
+                </div>
+                <h1>Профессиональный ремонт <span class="highlight">вашего автомобиля</span></h1>
+                <p class="hero-subtitle">Более 15 лет опыта. Качественно, быстро, с гарантией. Работаем со всеми марками автомобилей.</p>
+                
+                <div class="hero-features">
+                    <div class="feature">
+                        <i class="fas fa-clock"></i>
+                        <span>Срочный ремонт за 2 часа</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-ruble-sign"></i>
+                        <span>Прозрачные цены</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-car"></i>
+                        <span>Бесплатный эвакуатор</span>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="contact.html#booking" class="btn btn-primary">
+                        <i class="fas fa-calendar-check"></i>
+                        Записаться онлайн
+                    </a>
+                    <a href="tel:+74951234567" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i>
+                        Позвонить сейчас
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="image-frame">
+                    <i class="fas fa-car-mechanic"></i>
+                </div>
+                <div class="stats-overlay">
+                    <div class="stat-item">
+                        <h3 id="completed-repairs">2,547</h3>
+                        <p>Выполненных ремонтов</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 id="satisfied-clients">98%</h3>
+                        <p>Довольных клиентов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview">
+        <div class="container">
+            <h2 class="section-title">Наши <span>услуги</span></h2>
+            <p class="section-subtitle">Полный спектр услуг по ремонту и обслуживанию автомобилей</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car-battery"></i>
+                    </div>
+                    <h3>Диагностика</h3>
+                    <p>Компьютерная диагностика всех систем автомобиля с использованием современного оборудования</p>
+                    <a href="services.html#diagnostics" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-oil-can"></i>
+                    </div>
+                    <h3>Техобслуживание</h3>
+                    <p>Плановое ТО, замена масла, фильтров, технических жидкостей согласно регламенту</p>
+                    <a href="services.html#maintenance" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tire"></i>
+                    </div>
+                    <h3>Шиномонтаж</h3>
+                    <p>Сезонная замена шин, ремонт проколов, балансировка колес, хранение резины</p>
+                    <a href="services.html#tire-service" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="services.html" class="btn btn-outline">
+                    <i class="fas fa-list"></i>
+                    Все услуги
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="advantages">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают <span>нас</span></h2>
+            
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-number">01</div>
+                    <h3>Опытные мастера</h3>
+                    <p>Сертифицированные специалисты с опытом работы от 5 лет. Проходим регулярное обучение.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-number">02</div>
+                    <h3>Оригинальные запчасти</h3>
+                    <p>Работаем только с проверенными поставщиками. Гарантия на все установленные детали.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-number">03</div>
+                    <h3>Прозрачная смета</h3>
+                    <p>Фиксированные цены в прайсе. Никаких скрытых платежей. Согласуем все работы заранее.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-number">04</div>
+                    <h3>Гарантия 2 года</h3>
+                    <p>Даем расширенную гарантию на все виды работ. Бесплатное устранение недостатков.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Отзывы <span>клиентов</span></h2>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="client-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="client-info">
+                            <h4>Андрей Смирнов</h4>
+                            <p class="client-car">Volkswagen Passat 2018</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Отличный сервис! Починили коробку передач за один день. Цены адекватные, мастера вежливые. Буду рекомендовать друзьям!"</p>
+                    <div class="testimonial-date">15 мая 2024</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="client-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="client-info">
+                            <h4>Марина Иванова</h4>
+                            <p class="client-car">Toyota Camry 2020</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Делала ТО, заменили масло, фильтры. Все быстро и качественно. Очень понравилось отношение персонала. Обязательно вернусь!"</p>
+                    <div class="testimonial-date">10 мая 2024</div>
+                </div>
+            </div>
+            
+            <div class="add-testimonial">
+                <button id="add-review-btn" class="btn btn-outline">
+                    <i class="fas fa-edit"></i>
+                    Оставить отзыв
+                </button>
+                <div id="review-count" class="review-count">
+                    <i class="fas fa-comments"></i>
+                    <span>Отзывов: <strong>127</strong></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Нужен срочный ремонт?</h2>
+                <p>Мы работаем 7 дней в неделю с 8:00 до 22:00</p>
+                <div class="cta-buttons">
+                    <a href="tel:+74951234567" class="btn btn-light">
+                        <i class="fas fa-phone"></i>
+                        +7 (495) 123-45-67
+                    </a>
+                    <a href="contact.html#map" class="btn btn-outline-light">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Как проехать
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-tools"></i>
+                        <h3>Auto<span>Pro</span>Fix</h3>
+                    </div>
+                    <p class="footer-description">Профессиональный автосервис в Москве. Качественный ремонт и обслуживание автомобилей с 2009 года.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Контакты</h4>
+                    <ul class="footer-contacts">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>г. Москва, ул. Автомобильная, д. 15</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@autoprofix.ru">info@autoprofix.ru</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Пн-Вс: 8:00-22:00</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Услуги</h4>
+                    <ul class="footer-services">
+                        <li><a href="services.html#diagnostics">Диагностика</a></li>
+                        <li><a href="services.html#maintenance">Техническое обслуживание</a></li>
+                        <li><a href="services.html#engine">Ремонт двигателя</a></li>
+                        <li><a href="services.html#tire-service">Шиномонтаж</a></li>
+                        <li><a href="services.html#electrics">Электрика</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Быстрые ссылки</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="blog.html">Наш блог</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                        <li><a href="contact.html#booking">Онлайн запись</a></li>
+                        <li><a href="contact.html#map">Схема проезда</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2009-2024 AutoProFix. Все права защищены.</p>
+                    <p>ОГРН 1234567890123, ИНН 1234567890</p>
+                </div>
+                <div class="footer-stats">
+                    <div class="stat">
+                        <i class="fas fa-car"></i>
+                        <span>Авто в день: <strong id="daily-cars">12</strong></span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-user-check"></i>
+                        <span>Онлайн сегодня: <strong id="online-today">47</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Review Modal -->
+    <div id="review-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Оставить отзыв</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="review-form">
+                    <div class="form-group">
+                        <label for="review-name">Ваше имя</label>
+                        <input type="text" id="review-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="review-car">Марка автомобиля</label>
+                        <input type="text" id="review-car" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="review-rating">Оценка</label>
+                        <div class="rating-input">
+                            <i class="far fa-star" data-rating="1"></i>
+                            <i class="far fa-star" data-rating="2"></i>
+                            <i class="far fa-star" data-rating="3"></i>
+                            <i class="far fa-star" data-rating="4"></i>
+                            <i class="far fa-star" data-rating="5"></i>
+                        </div>
+                        <input type="hidden" id="review-rating" value="5" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="review-text">Текст отзыва</label>
+                        <textarea id="review-text" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить отзыв</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

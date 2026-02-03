@@ -1,0 +1,62 @@
+/* CSS Variables для автосервиса */
+:root {
+    /* Цветовая палитра */
+    --primary-color: #e63946;       /* Красный - акцентный */
+    --secondary-color: #1d3557;     /* Темно-синий */
+    --accent-color: #457b9d;        /* Голубой */
+    --dark-color: #2b2d42;          /* Темный */
+    --light-color: #f8f9fa;         /* Светлый фон */
+    --gray-color: #6c757d;          /* Серый */
+    --success-color: #2a9d8f;       /* Зеленый успеха */
+    --warning-color: #e9c46a;       /* Желтый предупреждения */
+    
+    /* Текст */
+    --text-color: #212529;
+    --text-light: #6c757d;
+    --text-on-dark: #ffffff;
+    
+    /* Фоны */
+    --bg-color: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --bg-dark: #1d3557;
+    --card-bg: #ffffff;
+    
+    /* Тени */
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+    
+    /* Скругления */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    
+    /* Отступы */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+    
+    /* Анимации */
+    --transition: all 0.3s ease;
+    --transition-slow: all 0.5s ease;
+}
+
+/* Темная тема */
+.dark-theme {
+    --primary-color: #ff6b6b;
+    --secondary-color: #4a4e69;
+    --accent-color: #9d4edd;
+    --dark-color: #121212;
+    --light-color: #1e1e1e;
+    --text-color: #e0e0e0;
+    --text-light: #b0b0b0;
+    --bg-color: #121212;
+    --bg-secondary: #1e1e1e;
+    --card-bg: #2d2d2d;
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.3);
+    --shadow-lg: 0 10px 15px rgba(0,0,0,0.3);
+}
